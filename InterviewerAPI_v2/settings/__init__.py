@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+    'rest_framework_simplejwt',
 
     'InterviewerAPI_v2',
 ]
@@ -72,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'InterviewerAPI_v2.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database

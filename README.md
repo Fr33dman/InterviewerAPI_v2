@@ -9,6 +9,10 @@ docker-compose up --build --detach
 ## Authentication
 ``/token/``
 
+User = "admin"
+
+password = "password"
+
 ## Refresh authentication token
 ``/token/refresh/``
 

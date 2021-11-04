@@ -72,7 +72,6 @@ class AnswerSerializer(serializers.ModelSerializer):
                 and 0 > len(validated_data['answer'])):
             raise serializers.ValidationError('Choice answer required')
         choice_answers = validated_data.pop('answer', None)
-        # Тут немного юзер анонимный приходит, не знаю с чем связано если честно, не смог нагуглить
         answer = Answer.objects.create(user=self.context.get('user'), **validated_data)
         if choice_answers:
             for choice_answer in choice_answers:
